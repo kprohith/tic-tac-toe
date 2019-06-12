@@ -6,5 +6,10 @@
 
 ####  This game is entirely written in [python](python.org). 
 
+#### This script uses [colorama](https://pypi.org/project/colorama/) for adding color to the commandline output.
+#### Install colorama to see colored output.
+
+
+
 
 
