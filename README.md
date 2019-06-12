@@ -4,7 +4,7 @@
 
 ###  Size of the game is _dynamically_ set depending on the user's choice.
 
-####  This game is entirely written in [python](python.org). 
+####  This game is entirely written in [python](https://python.org). 
 
 
 
