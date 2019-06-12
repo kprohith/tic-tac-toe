@@ -3,6 +3,8 @@
 import itertools
 from colorama import Fore, Back, Style, init
 
+init()
+
 def win(current_game):
 
 	def all_same(l):
@@ -62,11 +64,12 @@ def game_board(game_map, player=0, row=0, column=0, just_display=False):
 		for count, row in enumerate(game_map):
 			colored_row = ""
 			for item in row:
-				colored_row += "  "
-			elif item == 1:
-				colored_row += Fore.GREEN + " X " + Style.RESET_ALL
-			elif item == 2:
-				colored_row += Fore.MAGENTA + " O " + Style.RESET_ALL
+				if item == 0:
+					colored_row += "   "
+				elif item == 1:
+					colored_row += Fore.GREEN + " X " + Style.RESET_ALL
+				elif item == 2:
+					colored_row += Fore.MAGENTA + " O " + Style.RESET_ALL
 		print(count, colored_row)
 		return game_map
 	except IndexError:
